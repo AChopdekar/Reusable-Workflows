@@ -24,10 +24,10 @@ jobs:
       run: dotnet restore
 
     - name: Build,Test and package
-      uses: anusha414/reusable-demo-workflows/.github/actions/package@master
+      uses: AChopdekar/Reusable-Workflows/.github/actions/package@main
 
     - name: Run Hello World
-      uses: anusha414/reusable-demo-workflows/.github/actions/run@master
+      uses: AChopdekar/Reusable-Workflows/.github/actions/run@main
       with:
         FILENAME: ${{inputs.FILENAME}}
 
