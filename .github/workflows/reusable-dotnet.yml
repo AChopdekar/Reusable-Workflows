@@ -15,6 +15,9 @@ jobs:
     - name: checkout action
       uses: actions/checkout@v4
 
+    - name: Super Linter Code Base
+      uses: ./.github/actions/Super-Linter
+
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
