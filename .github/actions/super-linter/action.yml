@@ -1,0 +1,13 @@
+inputs:
+  secret_input: 
+     description: "..."
+     required: true
+
+runs:
+  using: "composite"
+
+  steps:
+    - name: Super Linter Code base run
+      uses: super-linter/super-linter@v6.7.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.secret_input }}
