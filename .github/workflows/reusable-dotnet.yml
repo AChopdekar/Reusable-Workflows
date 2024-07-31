@@ -17,8 +17,8 @@ jobs:
 
     - name: Super Linter Code Base
       uses: AChopdekar/Reusable-Workflows/.github/actions/super-linter@main
-      with:
-          secret_input: ${{ secrets.GITHUB_TOKEN }}
+      #with:
+       #   secret_input: ${{ secrets.GITHUB_TOKEN }}
           
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
